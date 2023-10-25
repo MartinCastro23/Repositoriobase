@@ -4,4 +4,4 @@
 **negrita**
 *italics*
 >>>antonio malo
-~~hola~~~4~
+~~hola~~
