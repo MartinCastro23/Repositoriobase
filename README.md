@@ -18,7 +18,7 @@ H<sub>2</sub>O
 
 im de best😎
 
-![logo gitea][logogitea.jpg]
+![logo gitea](logogitea.svg)
 
 (a<sup>2</sup> + b<sup>2</sup>)= a<sup>2</sup> + 2ab +  b<sup>2</sup>
 
@@ -39,3 +39,30 @@ esto es un <sup>indice</sup>
 
 `hola`	
 
+$$V_{sphere}=\frac{4}{3}\pi r^3$$
+
+|edad|altura|
+|---------|------|
+|10|1,65|
+|12|1,75|
+|14|1,85|
+
+antonio es un 👶
+
+- [x] 1º tarea
+- [ ] 2º tarea
+- [ ] todas las tareass terminadas :tada:
+
+1. lista
+   - primer objeto de la lista
+     - Segundo objeto de la lista
+
+> [!NOTE]
+recordatorio
+
+> [!IMPORTANT]
+importante
+
+> [!WARNING]
+aviso 
+       
