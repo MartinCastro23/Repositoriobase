@@ -9,4 +9,4 @@
 ~~neno~~
 H<sub>2</sub>O
 im de best😎
-![alt text](kdn-logo.jpg)
+![logo gitea](logogitea.svg)
