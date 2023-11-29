@@ -1,6 +1,0 @@
-entero = 33 #asignamos entero al valor 3
-decimal = 0.33#asignamos decimal al valor 0.33
-complejos = 3-3j#asignamos coplejos al valor 3-3j
-texto = "antonio enano"#asignamos texto a "antonio enano"
-
-print ("la variable es de tipo",(entero))
