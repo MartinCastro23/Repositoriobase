@@ -18,7 +18,7 @@ H<sub>2</sub>O
 
 im de best😎
 
-![logo gitea](logogitea.svg)
+![logo gitea](imagenes/logogitea.svg)
 
 (a<sup>2</sup> + b<sup>2</sup>)= a<sup>2</sup> + 2ab +  b<sup>2</sup>
 
