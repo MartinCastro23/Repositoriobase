@@ -8,10 +8,11 @@ Para usar git hay que instalalo no ordenador e deberiamos en principio establece
 
 Deberemos crear un cartafol onde vai o repositorio e dentro del inicializar o repositorio con *git init*.
 ### GIT ten tres etapas:
--Zona de traballo: cando estamos cambiando o codigo dos archivos.
+1. Zona de traballo: cando estamos cambiando o codigo dos archivos.
 
--Área de preparacion: transicion entre zona de traballo e repositorio.
+2. Área de preparacion: transicion entre zona de traballo e repositorio.
 
--Repositorio: é o acumulado dos cambios.
+3. Repositorio: é o acumulado dos cambios.
 
-Si queremos pillar o codigo do repositorio para traballar temos que facer un checkout pero para subir o código modificado ao repositorio hai que facelo en duas fases, unha primeira de "stage" (preparación) onde se rexistra a información dos cambios e despois facemos un commit que é modificar o repositorio con estes cambios rexistrados esto se chama ciclo de traballo en git.
+Si queremos pillar o codigo do repositorio para traballar temos que facer un checkout, pero para subir o código modificado ao repositorio hai que facelo en duas fases: unha primeira de *stage* (preparación), onde se rexistra a información dos cambios, e despois facemos un commit, que é modificar o repositorio con estes cambios rexistrados. Esto se chama **ciclo de traballo en git**.
+
