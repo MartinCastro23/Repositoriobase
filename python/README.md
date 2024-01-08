@@ -37,3 +37,15 @@ Empezar por minúscula/Tener serpientes
 
 ## Variable: 
  Espacio en la memoria del ordenador donde se almacenará un valor que podra cambiar durante la ejecución del programa.A la variable se les asigna un nombre para poder referirnos a ellas.
+
+## Listas
+- ### ¿Qué son las listas?
+Estructura de datos que nos permite almacenar gran cantidd de valores. En phyton las listas pueden guardar diferentes tipos de valores. Se pueden expndir dinámicamente añadiendo nuevos elementos.
+- ### Sintaxis de las listas
+Las listas tienen índice(elem1: índice 0, elem2: índice 2 ...)
+
+nombreLista=[elem1, elem2, elem3]      
+print (nombreLista)  (imprime todos los elem)
+print (nombreLista(1))  (imprime el de índice 1, elem2)
+print (nombreLista(-1))  (imprime el 1º por el final, elem3)
+
