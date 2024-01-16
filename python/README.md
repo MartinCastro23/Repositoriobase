@@ -53,7 +53,9 @@ print (nombreLista(-1))  (imprime el 1º por el final, elem3)
 ### Flujo de ejecución de un programa
 - Programa: orden con el que se ejecucion tus instrucciones
 En phyton el orden normal es de arriba a abajo.
-Las estructuras condicionales pueden romper el flujo. Las condiciones a avaliar dan como resuktado verdadero o falso. Si da verdadero se ejecuta el bloque, y si da falso no se ejecuta nada, rompe el flujo normal.
+Las estructuras condicionales pueden romper el flujo. Las condiciones a avaliar dan como resultado verdadero o falso. Si da verdadero se ejecuta el bloque, y si da falso no se ejecuta nada, rompe el flujo normal.
 ### Sintaxis
 if (condición) operador x:
-En phyton existe la funcion input() que sirve para introducr atos por el teclado.
+En phyton existe la funcion input() que sirve para introducir datos por el teclado. Lo que recive un imput lo transforma en datos de texto.
+El ambito de una variable es la parte del programa en la que es accesible una variable.
+El if puede ir acmpañado de else(y si no es verdad) que se ejecuta cuando la condicion da como resultado falso. El else siempre es compañero del if más cercano.
