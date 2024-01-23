@@ -59,3 +59,6 @@ if (condición) operador x:
 En phyton existe la funcion input() que sirve para introducir datos por el teclado. Lo que recive un imput lo transforma en datos de texto.
 El ambito de una variable es la parte del programa en la que es accesible una variable.
 El if puede ir acmpañado de else(y si no es verdad) que se ejecuta cuando la condicion da como resultado falso. El else siempre es compañero del if más cercano.
+
+## Elif 
+Se usa cuando tenemos que asignar muchas condiciones y todas estan integradas. Es una combinación entre if y else.
