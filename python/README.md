@@ -62,3 +62,7 @@ El if puede ir acmpañado de else(y si no es verdad) que se ejecuta cuando la co
 
 ## Elif 
 Se usa cuando tenemos que asignar muchas condiciones y todas estan integradas. Es una combinación entre if y else.
+
+##condicionales
+Con catenación de operadores de comparación, el resultado es verdadero si todo es verdadero. if 0<edad>100
+Solo se puede hacer si son de la misma medida.
