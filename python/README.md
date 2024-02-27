@@ -95,3 +95,11 @@ Introducimos una frase por texto, y creamos una funcion que me cuente cuántas v
 
 ###While sintaxis (examen)
 while condición:
+
+###continue, pass y else
+- Cotinue: a partir de continue no ejecuta la siguiente vuelta
+- pass: a partir de pass devuelve un nule y no se ejecuta. Normalmente se emplea para evitar un error en phyton
+- else: se usa para lo miso que un if
+
+###Tuplas
+Son listas inmutables, es decir, no se pueden modificar despues de su creación.
