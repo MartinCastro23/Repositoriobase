@@ -67,14 +67,14 @@ Se usa cuando tenemos que asignar muchas condiciones y todas estan integradas. E
 Con catenación de operadores de comparación, el resultado es verdadero si todo es verdadero. if 0<edad>100
 Solo se puede hacer si son de la misma medida.
 
-##boleanos
+##  boleanos
 and, or y not son operadores boleanos.
 - And: para que salga la condición verdadera tiene que salir las dos verdaderas.
 - Or: sale verdadero si uno es verdadero
 - Not: si es falso es verdadero
 En los condicionales podemos usar también el comando in. Este sirve para comprobar si una palabra esta dentro de una secuencia.
 
-##Bucles
+## Bucles
 Los bulces pueden ser determinados cuando sabemos cuantas veces se va a repetir, y los indeterminados son cuando se repiten una cantidad indeterminada de veces(dependen de una condicion).
 Se forma por la declaracion y cuerpo del bucle. Cuando se entra en un bucle el programa no avanza hasta que se salga de el.
 Cuando el elemento es una lista la variable vale los elementos de la lista por orden, y si es una cadena de texto valen sus caracteres. 
@@ -87,19 +87,33 @@ i =perico
 print(f"buenos dias {i}")
 resultadp:  benos dias perico
 
-###Sintaxis bucles (examen)  
+### Sintaxis bucles (examen)  
 for variable a recorrer in elemento a recorrer(lista, tupla, cadena de texto y rango):
 
-###Práctca de bucle for
+### Práctca de bucle for
 Introducimos una frase por texto, y creamos una funcion que me cuente cuántas vocales hay  en ese texto.
 
-###While sintaxis (examen)
+## While sintaxis (examen)
 while condición:
 
-###continue, pass y else
+## continue, pass y else
 - Cotinue: a partir de continue no ejecuta la siguiente vuelta
 - pass: a partir de pass devuelve un nule y no se ejecuta. Normalmente se emplea para evitar un error en phyton
 - else: se usa para lo miso que un if
 
-###Tuplas
-Son listas inmutables, es decir, no se pueden modificar despues de su creación.
+## Tuplas
+Las tuplas son listas unmutables, es decir, no se pueden modificar después de su creación.
+- no pernmiten añadir, eliminar o mover elementos
+- permiten extraer opciones, pero el resultado es una tupla nueva
+- no permiten busquedas
+- si permiten comprobar si un elemnto se encuentra una tupla
+### ventajas
+- más rapidas
+- menos espacio
+- formatean srings
+- pueden utilizarse como claves de un diccionario (las listas no)
+
+## Diccionario
+Estructura de datos que nos permiten alacenar valores de diferentes tipos e incluso listas y otros diccionarios
+La principal característica de los diccionarios es que los datos se almacena asociados a una clave de tal forma que se crea una asociación de tipo clave:valor para cada elemento alamacenado.
+los elementos almacenados no están ordenados. El orden es indiferente a la hora de almacenar información
