@@ -107,6 +107,7 @@ Las tuplas son listas unmutables, es decir, no se pueden modificar después de s
 - permiten extraer opciones, pero el resultado es una tupla nueva
 - no permiten busquedas
 - si permiten comprobar si un elemnto se encuentra una tupla
+- permiten índices, igual que las listas
 ### ventajas
 - más rapidas
 - menos espacio
@@ -114,6 +115,10 @@ Las tuplas son listas unmutables, es decir, no se pueden modificar después de s
 - pueden utilizarse como claves de un diccionario (las listas no)
 
 ## Diccionario
-Estructura de datos que nos permiten alacenar valores de diferentes tipos e incluso listas y otros diccionarios
-La principal característica de los diccionarios es que los datos se almacena asociados a una clave de tal forma que se crea una asociación de tipo clave:valor para cada elemento alamacenado.
-los elementos almacenados no están ordenados. El orden es indiferente a la hora de almacenar información
+Estructura de datos que nos permiten alacenar valores de diferentes tipos e incluso listas y otros diccionarios.
+La principal característica de los diccionarios es que los datos se almacena asociados a una clave de tal forma que se crea una asociación de tipo clave:valor para cada elemento alamacenado. Los elementos son referenciados por su clave. 
+los elementos almacenados no están ordenados. El orden es indiferente a la hora de almacenar información. Podems usaar tulas para asignar claves. El método keys devuelve las llaves. El método values devuelve los valores. La función len devuelve la longitud
+### Sintaxis
+diccionario={clave1:elemento1,...}, para añadir elementos al diccionario es: 
+<diccionario>[<nuevaclave>]=<nuevoelemento>, para cambiar el valor de los elementos:
+<diccionario>[<clave>]=<nuevoelemento>, para borrar un elemento clave: del <diccionario>[<clave>]
