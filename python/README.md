@@ -122,3 +122,6 @@ los elementos almacenados no están ordenados. El orden es indiferente a la hora
 diccionario={clave1:elemento1,...}, para añadir elementos al diccionario es: 
 <diccionario>[<nuevaclave>]=<nuevoelemento>, para cambiar el valor de los elementos:
 <diccionario>[<clave>]=<nuevoelemento>, para borrar un elemento clave: del <diccionario>[<clave>]
+
+## Split
+El método split convierte una variable tipo texto a una lista(de palabras).
