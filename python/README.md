@@ -9,7 +9,7 @@ Una variable puede tener números, pero no puede empezar por uno, mayúscula o s
 #### Reglas de cortesia:
 Empezar por minúscula/Tener serpientes
 
-## Tipos
+## Tipos de variables
 - tipos de texto: cadenas(str)
 
 - tipos numericos:enteros(int), decimales(float) y complejos(complex)
