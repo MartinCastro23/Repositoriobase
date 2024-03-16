@@ -38,7 +38,7 @@ def describir(p,f,c):
        print ("Ves una tumba en un altar en el centro de la habitación.")
        print ("Te da la sensación que hay algo dentro de la tumba ")
     elif sala == (1,1,2):
-        print ('Estás en la entrada e a iglesia. Todo está oscuro y húmedo')
+        print ('Estás en la entrada de a iglesia. Todo está oscuro y húmedo')
         if monjeVivo:
            print ('Escuchas ruídos extraños y tu miedo aumenta.')
     elif sala == (1,1,3):
