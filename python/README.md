@@ -9,29 +9,50 @@ Una variable puede tener números, pero no puede empezar por uno, mayúscula o s
 #### Reglas de cortesia:
 Empezar por minúscula/Tener serpientes
 
-## Tipos de variables
-- tipos de texto: cadenas(str)
 
-- tipos numericos:enteros(int), decimales(float) y complejos(complex)
-
-- tipos de secuencia: listas(list), tuplas(tuple) y rangos(range)
-
-- tipos de mapeado: diccionarios(dict)
-
-- tipos boleanos: boleanos(bool)
-
-## Operadores:
-- ### Aritmeticos:
--Suma (+)  -Resta (-)  -Multiplicación (*)  -División (/)  -Módulo (%)  -Exponente (**)  -División entera (//)
-- ### Comparación:
--Igual que (==)  -Diferente que (!=)  -Mayor que (>)  -Menor que (<)  -Mayor o igual que (>=)  -Menor o igual que (<=)
-- ### Lógicos:
--AND  -OR  -NOT
-- ### Asignación:
--Igual (=)  -Incremento (+=)  -Decremento (-=)  -Producto (*=)  -División (/=)  -Resto (%=)  -Exponente (**=)  -Cociente (//=)
-- ### Especiales:
--IS  -IS NOT  -IN  -NOT IN 
-
+```mermaid
+flowchart TD
+    A[arimeticos] --> B(suma) --> +
+    A[arimeticos] --> C(resta) --> -
+    A[arimeticos] --> D(multiplicación) --> *
+    A[arimeticos] --> E(división) --> /
+    A[arimeticos] --> F(módulo) --> I(%)
+    A[arimeticos] --> G(exponente) --> **
+    A[arimeticos] --> H(división entera) --> //
+```
+```mermaid
+flowchart TD
+    A[comparación] --> B(Igual que) --> =
+    A[comparación] --> C(Diferente que) --> J(!=)
+    A[comparación] --> D(Mayor que) --> H(>)
+    A[comparación] --> E(Menor que) --> I(<)
+    A[comparación] --> F(Igual o menor que) --> K(<=)
+    A[comparación] --> G(Igual o mayor que) --> M(>=)
+```
+```mermaid
+flowchart TD
+    A[Lógicos] --> B(AND)
+    A[Lógicos] --> C(OR)
+    A[Lógicos] --> D(NOT)
+```
+```mermaid
+flowchart TD
+    A[Asignación] --> B(igual) --> =
+    A[Asignación] --> C(incremento) --> +=
+    A[Asignación] --> D(decremento) --> -=
+    A[Asignación] --> E(producto) --> *=
+    A[Asignación] --> F(división) --> /=
+    A[Asignación] --> G(resto) --> I(%=)
+    A[Asignación] --> H(exponente) --> **=
+    A[Asignación] --> J(cociente) --> //=
+```
+```mermaid
+flowchart TD
+    A[Especiales] --> B(IS)
+    A[Especiales] --> C(IS NOT)
+    A[Especiales] --> D(IN)
+    A[Especiales] --> E(IN NOT)
+```
 ## Identación: 
  Las líneas identadas forman bloque con la anterior sin identar, para esto se usa la tabulación o cuatro espacios.
 
