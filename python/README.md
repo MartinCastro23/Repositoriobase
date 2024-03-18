@@ -9,6 +9,7 @@ Una variable puede tener números, pero no puede empezar por uno, mayúscula o s
 #### Reglas de cortesia:
 Empezar por minúscula/Tener serpientes
 
+## Tipos operadores
 
 ```mermaid
 flowchart TD
@@ -64,11 +65,12 @@ flowchart TD
 Estructura de datos que nos permite almacenar gran cantidd de valores. En phyton las listas pueden guardar diferentes tipos de valores. Se pueden expndir dinámicamente añadiendo nuevos elementos.
 - ### Sintaxis de las listas
 Las listas tienen índice(elem1: índice 0, elem2: índice 2 ...)
-
+```Python
 nombreLista=[elem1, elem2, elem3]      
 print (nombreLista)  (imprime todos los elem)
 print (nombreLista(1))  (imprime el de índice 1, elem2)
 print (nombreLista(-1))  (imprime el 1º por el final, elem3)
+```
 
 ## Estructuras de control de flujo
 ### Flujo de ejecución de un programa
@@ -79,13 +81,16 @@ Las estructuras condicionales pueden romper el flujo. Las condiciones a avaliar 
 if (condición) operador x:
 En phyton existe la funcion input() que sirve para introducir datos por el teclado. Lo que recive un imput lo transforma en datos de texto.
 El ambito de una variable es la parte del programa en la que es accesible una variable.
-El if puede ir acmpañado de else(y si no es verdad) que se ejecuta cuando la condicion da como resultado falso. El else siempre es compañero del if más cercano.
+El if puede ir acmopañado de else(y si no es verdad) que se ejecuta cuando la condicion da como resultado falso. El else siempre es compañero del if más cercano.
 
 ## Elif 
 Se usa cuando tenemos que asignar muchas condiciones y todas estan integradas. Es una combinación entre if y else.
 
 ## Condicionales
-Con catenación de operadores de comparación, el resultado es verdadero si todo es verdadero. if 0<edad>100
+Con catenación de operadores de comparación, el resultado es verdadero si todo es verdadero. 
+```Python
+if 0<edad>100
+```
 Solo se puede hacer si son de la misma medida.
 
 ##  boleanos
@@ -103,10 +108,11 @@ La función range develve una lista de números enteros empezando por el 0, y de
 o si se meten dos parámetros(el de la iqzierda tiene que ser menor), me va a devolver una cantidad de números enteros que es la resta empezando por el menor.
 La función "print" es formateable, para eso lo primero dentro del paréntesis es la letra f. 
 Primero empezamos con la letra f y luego podem usar varibles con substitución poniendo la variable entre paréntesis.
-ej:
+```Python
 i =perico
 print(f"buenos dias {i}")
-resultadp:  benos dias perico
+```
+
 
 ### Sintaxis bucles (examen)  
 for variable a recorrer in elemento a recorrer(lista, tupla, cadena de texto y rango):
@@ -140,9 +146,10 @@ Estructura de datos que nos permiten alacenar valores de diferentes tipos e incl
 La principal característica de los diccionarios es que los datos se almacena asociados a una clave de tal forma que se crea una asociación de tipo clave:valor para cada elemento alamacenado. Los elementos son referenciados por su clave. 
 los elementos almacenados no están ordenados. El orden es indiferente a la hora de almacenar información. Podems usaar tulas para asignar claves. El método keys devuelve las llaves. El método values devuelve los valores. La función len devuelve la longitud
 ### Sintaxis
+```Python
 diccionario={clave1:elemento1,...}, para añadir elementos al diccionario es: 
 <diccionario>[<nuevaclave>]=<nuevoelemento>, para cambiar el valor de los elementos:
 <diccionario>[<clave>]=<nuevoelemento>, para borrar un elemento clave: del <diccionario>[<clave>]
-
+```
 ## Split
 El método split convierte una variable tipo texto a una lista(de palabras).
