@@ -46,7 +46,7 @@ def describir(p,f,c):
     elif sala == (1,2,1):
        print ("Ves una gran larga mesa. Sobre ella, algunos trozos de pan y restos líquidos en copas rotas.")
     elif sala == (1,2,2):
-        print ("Una escalera  de caracol demadera podrida conduce hacia arriba.")
+        print ("Una escalera  de caracol de madera podrida conduce hacia arriba.")
         if monjeVivo:
            print ("En algún lugar se ecucha a alguien moverse de lado a lado.")
     elif sala == (1,2,3):
