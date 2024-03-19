@@ -87,7 +87,7 @@ def intro():
    print ("Según dicen, dentro se encuentra un monje custodiando el libro sagrado de San Benito")
    time.sleep(1)
    print ()
-   print ("Cojes fuerzas, te arrepientes
+   print ("Cojes fuerzas, te arrepientes)
    por aceptar la apuesta y entras a la iglesia...")
    time.sleep(1)
    print ()
