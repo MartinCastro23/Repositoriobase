@@ -26,11 +26,10 @@ habitacion.salida.extend([""])
 
 
 class Personaje:
-    def __init__(self, nombre, puntos_de_vida):
+    def __init__(self, nombre, lugar_actual):
         self.nombre = nombre
-        self.puntos_de_vida = puntos_de_vida
-
-jugador = personaje("Bebeto", 100)
+        self.lugar_actual = lugar_actual
+        self.inventario = []
 
 
 print (comedor.descripcion)
