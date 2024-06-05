@@ -1,49 +1,45 @@
-def __init__(self, nombre, descripcion, coordenadas):
-		self.descripcion = descripcion
-		self.salida = []
-		self.coordenadas = coordenadas
-		self.objetos = []
-		self.id = nombre
-	
-	def engadir(self, cousa):
-		self.objetos.append(cousa)
-	def arramplar(self, cousa):
-		self.objetos.remove(cousa)
-		return cousa
-
-comedor = localizacion("comedor", "Es un comedor asqueroso", [0,1,1])
-porche = localizacion("porche", "En el porche hay un banco podrido", [0,0,0])
-salon = localizacion("salon", "El salon esta helado", [0,0,1])
-cocina = localizacion("cocina", "Es una cocina mugrienta", [0,1,0])
-habitacion = localizacion("habitacion", "La habitacion esta destrozada", [1,1,1])
-
-
-comedor.salida.extend(["oeste,sur,arriba"])
-porche.salida.extend(["norte,este"])
-salon.salida.extend(["norte"])
-cocina.salida.extend(["sur,este"])
-habitacion.salida.extend([""])
-
-
-class Personaje:
-    def __init__(self, nombre, lugar_actual):
+class localizacion:
+    def __init__(self, nombre, descripcion, coordenadas):
         self.nombre = nombre
-        self.lugar_actual = lugar_actual
-        self.inventario = []
+        self.descripcion = descripcion
+        self.salida = []
+        self.coordenadas = coordenadas
+        self.objetos = []
 
+    def engadir(self, objetos):
+        self.objetos.append(objeto)
+        
+    def arramplar(self, objetos):
+        self.objetos.remove(objeto)
+        return cousa
 
-print (comedor.descripcion)
-print ("Las salidas posibles son:",comedor.salida) 
+    def mostrar_info(self):
+        print(f"Te encuentras en {sel.nombre}")
+        print(self.descripcion)
+        if self.objetos:
+            print("Puedes ver los siguientes objetos:")
+            for cousa in self.objetos:
+                print(f"-{objeto.nombre}")
 
-print (porche.descripcion)
-print ("Las salidas posibles son:",porche.salida) 
+class mapamundi:
+    def __init__(self):
+        self.mapa = {}
+        self.cartografiar()
 
-print (salon.descripcion)
-print ("Las salidas posibles son:",salon.salida) 
+    def cartografiar():
+       comedor = localizacion("comedor", "Es un comedor asqueroso" , [0,1,1])
+       comedor.salida.extend(["sur", "oeste", "arriba"])
+       
+       porche = localizacion("porche", "Es un porche sucio, con un banco lleno de telarañas" , [0,0,0])
+       porche.salida.extend(["norte", "este"])
+        
+       salon = localizacion("salon", "Es un salon grande y oscuro" , [0,0,1])
+       salon.salida.extend(["norte", "oeste"])
+        
+       cocina = localizacion("cocina", "Es una cocina pequeña y llena de mugre" , [0,1,0])
+       cocina.salida.extend(["sur" , "este"])
+        
+       habitacion  = localizacion("habitacion", "Es una habitacion oscura y huele muy mal" , [1,1,1])
+       habitacion.salida.extend(["abajo"])
 
-print (cocina.descripcion)
-print ("Las salidas posibles son:",cocina.salida) 
-
-print (habitacion.descripcion)
-print ("Las salidas posibles son:",habitacion.salida) 	
-
+        self.mapa[localizacion.comedor.coordenadas] = comedor
