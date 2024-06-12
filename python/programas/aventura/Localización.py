@@ -1,64 +1,70 @@
-from obxetos import *
+from obxectos import *
 
-class Localizacion:
-	def __init__(self, nombre, descripcion, coordenadas):
-		self.nombre = nombre
-		self.descripcion = descripcion
-		self.coordenadas = coordenadas
-		self.objetos = []
-		self.salida = []
+class localizacion:
+    def __init__(self, nombre, descripcion, coordenadas):
+        self.nombre = nombre
+        self.descripcion = descripcion
+        self.salida = []
+        self.coordenadas = coordenadas
+        self.objetos = []
+        self.objetos_ocultos = self.objetos.copy()
 
-	def engadír(self, objeto):
-		self.objetos.append(objeto)
+    def añadir(self, objeto):
+        self.objetos.append(objeto)
+        self.objetos_ocultos.append(objeto)
+  
+    def arramplar(self, objeto):
+        self.objetos.remove(objeto)
+        return objeto
 
-	def arramplar(self, objeto):
-		self.objetos.remove(objeto)
-		return objeto
-        
-	def mostrar_info(self):
-		print(f"Te encuentras en {self.nombre}")
-		print(self.descripcion)
-       
-	def buscar(self):
-		if self.objetos_ocultos:
-			print("Has encontrado los siguientes objetos:")
-		for objeto in self.objetos_ocultos:
-			print(f"- {objeto.nombre}")
-		self.objetos_ocultos.clear()
-		else:
-			print("No hay nada más que encontrar aquí")
+    def mostrar_info(self):
+        print(f"Te encuentras en: {self.nombre}")
+        print(self.descripcion)
+
+    def buscar(self):
+        if self.objetos_ocultos:
+            print("Has encontrado los siguientes objetos:")
+            for objeto in self.objetos_ocultos:
+                print(f"- {objeto.nombre}")
+            self.objetos_ocultos.clear()
+        else:
+            print("No hay nada más que encontrar aquí")
 
 class Mapamundi:
     def __init__(self):
         self.mapa = {}
         self.cartografiar()
-    
+
     def cartografiar(self):
+        comedor = localizacion("Comedor", "Es un comedor asqueroso" , [0,1,1])
+        comedor.salida.extend(["sur", "oeste", "arriba"])
+       
+        porche = localizacion("Porche", "Es un porche sucio, con un banco lleno de telarañas" , [0,0,0])
+        porche.salida.extend(["norte", "este"])
         
-        ganzua = objeto("Ganzua", "una ganzua vieja y rota")
-        pera = objeto("Pera", "una pera rica y jugosa")
-        tenedor = objeto("Tenedor", "un tenedor sucio y oxidado")
-        peluche = objeto("Peluche", "un peluche de un zorro apoyado en el banco")
-        croquetas = objeto("Croquetas", "un par de croquetas envasadas")
+        salon = localizacion("Salón", "Es un salón grande y oscuro" , [0,0,1])
+        salon.salida.extend(["norte", "oeste"])
         
-        porche = Localizacion("Porche", "ves un porche con un banco sucio y una puerta hacia la casa.", (0, 0, 0))
-        self.mapa[tuple(porche.coordenadas)] = porche
-        porche.engadír(peluche)
+        cocina = localizacion("Cocina", "Es una cocina pequeña y llena de mugre" , [0,1,0])
+        cocina.salida.extend(["sur" , "este"])
         
-        cocina = Localizacion("Cocina", "una cocina muy sucia con una mesa en mal estado.", (0, 1, 0))
-        self.mapa[tuple(cocina.coordenadas)] = cocina
-        cocina.engadír(pera)
-        
-        salon = Localizacion("Salón", "un salón con un sofá lleno de polvo y una televisión rota.", (0, 0, 1))
-        self.mapa[tuple(salon.coordenadas)] = salon
-        salon.engadír(tenedor)
-        
-        comedor = Localizacion("Comedor", "un comedor con una mesa, 4 sillas y un cuadro aterrador.", (0, 1, 1))
+        habitacion  = localizacion("Habitación", "Es una habitación oscura y huele muy mal" , [1,1,1])
+        habitacion.salida.extend(["abajo"])
         self.mapa[tuple(comedor.coordenadas)] = comedor
-        comedor.engadír(croquetas)
-        
-        habitacion = Localizacion("Habitación", "hay una habitación con una cama rota y un armario cerrador.", (1, 1, 1))
+        self.mapa[tuple(porche.coordenadas)] = porche
+        self.mapa[tuple(salon.coordenadas)] = salon
+        self.mapa[tuple(cocina.coordenadas)] = cocina
         self.mapa[tuple(habitacion.coordenadas)] = habitacion
-        habitacion.engadír(ganzua)
+
+        banana = objeto("Banana", "Es una banana amarilla muy grande y gorda")
+        bolsita = objeto("Bolsita", "Es una bolsita pequeña llena de talco")
+        telefono = objeto("Móvil", "Es un Nokia 105 del año 2002")
+        llaves = objeto("Llaves", "Has visto unas llaves antiguas")
+        escopeta = objeto("Escopeta", "Ves una escopeta desgatada arriba de la chimenea")
         
+        comedor.añadir(banana)
+        cocina.añadir(bolsita)
+        habitacion.añadir(telefono)
+        porche.añadir(llaves)
+        salon.añadir(escopeta)
         
