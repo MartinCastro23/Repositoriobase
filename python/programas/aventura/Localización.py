@@ -1,27 +1,32 @@
 from obxetos import *
 
 class Localizacion:
-    def __init__(self, nombre, descripcion, coordenadas):
-        self.nombre = nombre
-        self.descripcion = descripcion
-        self.coordenadas = coordenadas
-        self.objetos = []
-        self.salida = []
+	def __init__(self, nombre, descripcion, coordenadas):
+		self.nombre = nombre
+		self.descripcion = descripcion
+		self.coordenadas = coordenadas
+		self.objetos = []
+		self.salida = []
 
-    def engadír(self, objeto):
-        self.objetos.append(objeto)
+	def engadír(self, objeto):
+		self.objetos.append(objeto)
 
-    def arramplar(self, objeto):
-        self.objetos.remove(objeto)
-        return objeto
+	def arramplar(self, objeto):
+		self.objetos.remove(objeto)
+		return objeto
         
-    def mostrar_info(self):
-        print(f"Te encuentras en {self.nombre}")
-        print(self.descripcion)
-        if self.objetos:
-            print("Puedes ver los siguientes objetos:")
-            for objeto in self.objetos:
-                print(f"- {objeto.nombre}")
+	def mostrar_info(self):
+		print(f"Te encuentras en {self.nombre}")
+		print(self.descripcion)
+       
+	def buscar(self):
+		if self.objetos_ocultos:
+			print("Has encontrado los siguientes objetos:")
+		for objeto in self.objetos_ocultos:
+			print(f"- {objeto.nombre}")
+		self.objetos_ocultos.clear()
+		else:
+			print("No hay nada más que encontrar aquí")
 
 class Mapamundi:
     def __init__(self):
