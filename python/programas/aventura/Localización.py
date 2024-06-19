@@ -40,40 +40,45 @@ class localizacion:
 			print("No hay nada más que encontrar aquí")
 
 class Mapamundi:
-    def __init__(self):
-        self.mapa = {}
-        self.cartografiar()
+	def __init__(self):
+		self.mapa = {}
+		self.cartografiar()
 
-    def cartografiar(self):
-        comedor = localizacion("Comedor", "Es un comedor asqueroso" , [0,1,1])
-        comedor.salida.extend(["sur", "oeste", "arriba"])
+	def cartografiar(self):
+		comedor = localizacion("Comedor", "Es un comedor asqueroso" , [0,1,1])
+		comedor.salida.extend(["sur", "oeste", "arriba"])
        
-        porche = localizacion("Porche", "Es un porche sucio, con un banco lleno de telarañas" , [0,0,0])
-        porche.salida.extend(["norte", "este"])
+		porche = localizacion("Porche", "Es un porche sucio, con un banco lleno de telarañas" , [0,0,0])
+		porche.salida.extend(["norte", "este"])
         
-        salon = localizacion("Salón", "Es un salón grande y oscuro" , [0,0,1])
-        salon.salida.extend(["norte", "oeste"])
+		salon = localizacion("Salón", "Es un salón grande y oscuro" , [0,0,1])
+		salon.salida.extend(["norte", "oeste"])
         
-        cocina = localizacion("Cocina", "Es una cocina pequeña y llena de mugre" , [0,1,0])
-        cocina.salida.extend(["sur" , "este"])
-        
-        habitacion  = localizacion("Habitación", "Es una habitación oscura y huele muy mal" , [1,1,1])
-        habitacion.salida.extend(["abajo"])
-        self.mapa[tuple(comedor.coordenadas)] = comedor
-        self.mapa[tuple(porche.coordenadas)] = porche
-        self.mapa[tuple(salon.coordenadas)] = salon
-        self.mapa[tuple(cocina.coordenadas)] = cocina
-        self.mapa[tuple(habitacion.coordenadas)] = habitacion
+		cocina = localizacion("Cocina", "Es una cocina pequeña y llena de mugre" , [0,1,0])
+		cocina.salida.extend(["sur" , "este"])
 
-        banana = objeto("Banana", "Es una banana amarilla muy grande y gorda")
-        bolsita = objeto("Bolsita", "Es una bolsita pequeña llena de talco")
-        telefono = objeto("Móvil", "Es un Nokia 105 del año 2002")
-        llaves = objeto("Llaves", "Has visto unas llaves antiguas")
-        escopeta = objeto("Escopeta", "Ves una escopeta desgatada arriba de la chimenea")
+		terraza = localizacion("Terraza", "Es una terraza fria y descuidada" ,[2,1,1])
+		terraza.salida.extend(["sur", "oeste", "arriba", "arriba"])
         
-        comedor.añadir(banana)
-        cocina.añadir(bolsita)
-        habitacion.añadir(telefono)
-        porche.añadir(llaves)
-        salon.añadir(escopeta)
+		habitacion  = localizacion("Habitación", "Es una habitación oscura y huele muy mal" , [1,1,1])
+		habitacion.salida.extend(["abajo"])
         
+		self.mapa[tuple(comedor.coordenadas)] = comedor
+		self.mapa[tuple(porche.coordenadas)] = porche
+		self.mapa[tuple(salon.coordenadas)] = salon
+		self.mapa[tuple(cocina.coordenadas)] = cocina
+		self.mapa[tuple(habitacion.coordenadas)] = habitacion
+
+		pera = objeto("Pera", "Es una pera verde y jugosa")
+		bolsa = objeto("Bolsa", "Es una bolsa pequeña llena de polvos")
+		portatil = objeto("Portatil", "Es un portatil linus viejo")
+		llaves = objeto("Llaves", "Has visto unas llaves antiguas")
+		arma = objeto("Arma", "Ves un arma de caza")
+		rastrillo = objeto("Rastrillo", "Hay un rastrillo oxidado apoyado en la esquina")
+		
+		comedor.añadir(pera)
+		cocina.añadir(bolsa)
+		habitacion.añadir(portatil)
+		porche.añadir(llaves)
+		salon.añadir(arma)
+		terraza.añadir(rastrillo)        
